@@ -4,11 +4,19 @@ import (
 	"net/http"
 
 	"github.com/codegangsta/negroni"
+	sessions "github.com/goincremental/negroni-sessions"
+	"github.com/goincremental/negroni-sessions/cookiestore"
 	"github.com/gorilla/mux"
 	"github.com/unrolled/render"
 )
 
 var renderer *render.Render
+
+const (
+	//애플리케이션에서 사용할 세션의 키 정보
+	sessionKey    = "simple_chat_session"
+	sessionSecret = "simple_chat_session_secret"
+)
 
 func init() {
 	//렌더러 생성
@@ -24,6 +32,8 @@ func main() {
 
 	//negroni 미들웨어 생성
 	n := negroni.Classic()
+	store := cookiestore.New([]byte(sessionSecret))
+	n.Use(sessions.Sessions(sessionKey, store))
 
 	//negroni에 router를 핸들러로 등록
 	n.UseHandler(router)
