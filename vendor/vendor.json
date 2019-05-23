@@ -1,6 +1,25 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "Iy1fvIEurFm8PP3edAX/cuYBoGQ=",
+			"path": "github.com/codegangsta/negroni",
+			"revision": "0ce192d0bd24e9ec58b05bc72b3eac5bcc4f6517",
+			"revisionTime": "2019-04-08T19:14:22Z"
+		},
+		{
+			"checksumSHA1": "2B1jFYtKK9PYdkQloVHvFqrt2YM=",
+			"path": "github.com/gorilla/mux",
+			"revision": "ed099d42384823742bba0bf9a72b53b55c9e2e38",
+			"revisionTime": "2019-05-17T00:20:44Z"
+		},
+		{
+			"checksumSHA1": "ptPFodAqs24yw4sRIqc4Lie6TKY=",
+			"path": "github.com/unrolled/render",
+			"revision": "1ac792296fd4f4de9559a5f9a85c277c54ffb1cf",
+			"revisionTime": "2019-03-25T15:04:41Z"
+		}
+	],
 	"rootPath": "github.com/nodias/go_example"
 }
