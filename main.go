@@ -3,11 +3,11 @@ package main
 import (
 	"net/http"
 
-	"github.com/codegangsta/negroni"
 	sessions "github.com/goincremental/negroni-sessions"
 	"github.com/goincremental/negroni-sessions/cookiestore"
 	"github.com/gorilla/mux"
 	"github.com/unrolled/render"
+	"github.com/urfave/negroni"
 )
 
 var renderer *render.Render
@@ -28,6 +28,13 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		renderer.HTML(w, http.StatusOK, "index", map[string]string{"title": "Simple Chat!"})
+	}).Methods("GET")
+	router.HandleFunc("/login", func(w http.ResponseWriter, r *http.Request) {
+		renderer.HTML(w, http.StatusOK, "login", nil)
+	}).Methods("GET")
+	router.HandleFunc("/logout", func(w http.ResponseWriter, r *http.Request) {
+		sessions.GetSession(r).Delete(keyCurrentUser)
+		http.Redirect(w, r, "/login", http.StatusFound)
 	}).Methods("GET")
 
 	//negroni 미들웨어 생성

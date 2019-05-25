@@ -3,10 +3,22 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "Iy1fvIEurFm8PP3edAX/cuYBoGQ=",
-			"path": "github.com/codegangsta/negroni",
-			"revision": "0ce192d0bd24e9ec58b05bc72b3eac5bcc4f6517",
-			"revisionTime": "2019-04-08T19:14:22Z"
+			"checksumSHA1": "hwa+mCU7WNCt5HyqSZdl0Luk9HM=",
+			"path": "github.com/goincremental/negroni-sessions",
+			"revision": "40b49004abeec57f602bad8509521a865b2be95e",
+			"revisionTime": "2017-12-23T14:32:34Z"
+		},
+		{
+			"checksumSHA1": "4n9HSHVR4QWT/G9oT+q2Gb7x2jE=",
+			"path": "github.com/goincremental/negroni-sessions/cookiestore",
+			"revision": "40b49004abeec57f602bad8509521a865b2be95e",
+			"revisionTime": "2017-12-23T14:32:34Z"
+		},
+		{
+			"checksumSHA1": "UrOY9AlJnuaw7zQ+xHzhK/KpCjU=",
+			"path": "github.com/gorilla/context",
+			"revision": "51ce91d2eaddeca0ef29a71d766bb3634dadf729",
+			"revisionTime": "2018-10-12T15:35:48Z"
 		},
 		{
 			"checksumSHA1": "2B1jFYtKK9PYdkQloVHvFqrt2YM=",
@@ -15,10 +27,28 @@
 			"revisionTime": "2019-05-17T00:20:44Z"
 		},
 		{
+			"checksumSHA1": "tf+bn/G8sfZq35Bv0ulW/4tbRsE=",
+			"path": "github.com/gorilla/securecookie",
+			"revision": "e65cf8c5df817c89aeb47ecb46064e802e2de943",
+			"revisionTime": "2018-10-10T17:46:47Z"
+		},
+		{
+			"checksumSHA1": "PpSeJbhKEk1lQ7BXjxOiRONU20s=",
+			"path": "github.com/gorilla/sessions",
+			"revision": "12bd4761fc66ac946e16fcc2a32b1e0b066f6177",
+			"revisionTime": "2018-12-08T21:45:19Z"
+		},
+		{
 			"checksumSHA1": "ptPFodAqs24yw4sRIqc4Lie6TKY=",
 			"path": "github.com/unrolled/render",
 			"revision": "1ac792296fd4f4de9559a5f9a85c277c54ffb1cf",
 			"revisionTime": "2019-03-25T15:04:41Z"
+		},
+		{
+			"checksumSHA1": "qzA1dLWFE6MPPuC2s38tYp5pSYE=",
+			"path": "github.com/urfave/negroni",
+			"revision": "0ce192d0bd24e9ec58b05bc72b3eac5bcc4f6517",
+			"revisionTime": "2019-04-08T19:14:22Z"
 		}
 	],
 	"rootPath": "github.com/nodias/go_example"
